@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../Assets/first-image.png";
 import img2 from "../Assets/second-image.png";
+import img3 from "../Assets/third-image.png";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 const Home = () => {
@@ -441,6 +442,32 @@ const Home = () => {
             src={img2}
             alt="second image"
           />
+        </div>
+
+        <div class="lg:flex lg:justify-between my-28 mx-5">
+          <img
+            class="lg:w-1/2 lg:mt-0 lg:ml-14 lg:mr-0 mr-0 mt-5"
+            src={img3}
+            alt="second image"
+          />
+          <div class="lg:w-1/2 lg:ml-24 lg:mr-14 ml-10 mr-8 flex-col align-middle justify-center h-full">
+            <h1 class="lg:text-4xl lg:text-left text-3xl font-bold text-center lg:mb-5 mb-5 lg:mt-32 mt-20 lg:mr-32">
+              Connect your tools, close your tabs
+            </h1>
+            <p class="lg:text-left text-center mb-10">
+              Whether you want to edit your Google Docs, resolve Jira issues, or
+              collaborate over Zoom, Miro has 100+ integrations with tools you
+              already use and love.
+            </p>
+            <span class="lg:flex lg:justify-start flex justify-center items-center">
+              <span>
+                <Link class="text-blue-400 underline">Learn More</Link>
+              </span>
+              <span>
+                <FaArrowRightLong class="mt-1 ml-1" />
+              </span>
+            </span>
+          </div>
         </div>
       </div>
     </>
