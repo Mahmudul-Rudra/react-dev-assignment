@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Header = () => {
   return (
     <>
-      <nav class=" bg-white w-full h-20  flex justify-between sticky lg:top-0 top-0 items-center lg:px-4">
+      <nav class=" bg-white w-full h-20  flex justify-between sticky lg:top-0 top-0 items-center lg:px-4 z-50">
         <div class="flex font-semibold items-center">
           <Link to={"/"}>
             <svg

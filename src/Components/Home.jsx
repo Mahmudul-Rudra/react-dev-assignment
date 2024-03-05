@@ -2,8 +2,16 @@ import React from "react";
 import img1 from "../Assets/first-image.png";
 import img2 from "../Assets/second-image.png";
 import img3 from "../Assets/third-image.png";
+import img5 from "../Assets/fifth-image.png";
+import img6 from "../Assets/sixth-image.png";
+import tool_img_1 from "../Assets/tool-image-diamond.png";
+import tool_img_2 from "../Assets/tool-image-xd.png";
+import tool_img_3 from "../Assets/tool-image-p.png";
+import tool_img_4 from "../Assets/tool-image-norton.png";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { PiCheckBold } from "react-icons/pi";
+
 const Home = () => {
   return (
     <>
@@ -467,6 +475,111 @@ const Home = () => {
                 <FaArrowRightLong class="mt-1 ml-1" />
               </span>
             </span>
+          </div>
+        </div>
+        <div class="mt-44 mx-2 md:mx-36 mb-2 md:mb-32 relative z-1">
+          <div class="bg-[url('/src/Assets/fourth-image.png')] h-80 md:h-96 mt-[-40px] md:mt-[-70px] bg-cover bg-no-repeat relative">
+            <h1 class="absolute text-2xl md:text-3xl font-bold top-24 md:top-40 bottom-20 md:bottom-32 left-0 md:left-48 right-0 md:right-auto text-center md:ml-[28rem] md:mr-auto mb-4">
+              The Ways We Work
+            </h1>
+            <p class="absolute text-sm md:text-base top-32 md:top-52 bottom-20 md:bottom-32 left-0 md:left-44 right-0 md:right-auto md:ml-[28rem] md:mr-auto mb-4 text-center">
+              How has our relationship with work changed?
+            </p>
+            <Link class="p-2 md:p-5 absolute top-40 md:top-40 w-44 left-0 md:left-60 right-0 md:right-auto md:ml-[28rem] md:mr-auto mb-4 text-center bg-blue-500 flex justify-center rounded-2xl items-center md:ml-20 md:mr-20 ml-28 mr-28 mt-24">
+              Sign up free <FaArrowRightLong class="mt-[4px] mx-[10px]" />
+            </Link>
+          </div>
+        </div>
+
+        <div class="">
+          <h1 class="text-3xl font-bold lg:ml-24 mb-10 my-24 lg:text-left text-center">
+            Built for the way you work
+          </h1>
+          <div class="lg:flex grid grid-cols-1 align-middle items-center text-center lg:ml-5">
+            <Link class="lg:mx-7 lg:ml-24 my-5">Brainstorming</Link>
+            <Link class="lg:mx-7 my-3">Diagramming</Link>
+            <Link class="lg:mx-7 my-3">Meetings & Workshops</Link>
+            <Link class="lg:mx-7 my-3">Scrum Events</Link>
+            <Link class="lg:mx-7 my-3">Mapping</Link>
+            <Link class="lg:mx-7 my-3">Research & Design</Link>
+            <Link class="lg:mx-7 my-3">Strategic Planning</Link>
+          </div>
+          <div class="lg:flex lg:justify-between lg:my-28 my-14 mx-5">
+            <div class="lg:w-1/2 lg:ml-24 lg:mr-14 ml-10 mr-8 flex-col align-middle justify-center h-full">
+              <h1 class="lg:text-4xl lg:text-left text-3xl font-bold text-center lg:mb-5 mb-5 lg:mt-5 mt-5 lg:mr-32">
+                Brainstorming
+              </h1>
+              <p class="lg:text-left text-center mb-10">
+                Unleash creative ideas and build on them with the help of sticky
+                notes, images, mind maps, videos, drawing capabilities — the
+                list goes on.
+              </p>
+              <span class="lg:flex lg:justify-start flex justify-center items-center">
+                <span>
+                  <Link class="text-blue-400 underline">Learn More</Link>
+                </span>
+                <span>
+                  <FaArrowRightLong class="mt-1 ml-1" />
+                </span>
+              </span>
+            </div>
+
+            <img
+              class="lg:w-1/2 lg:mt-0 lg:ml-14 lg:mr-10 mr-0 mt-5"
+              src={img5}
+              alt="fifth image"
+            />
+          </div>
+        </div>
+        <div class="">
+          <h1 class="text-3xl font-bold lg:ml-24 mb-10 my-24 lg:text-left text-center">
+            Built for all kinds of terms
+          </h1>
+          <div class="lg:flex grid grid-cols-1 align-middle items-center text-center lg:ml-5">
+            <Link class="lg:mx-7 lg:ml-24 my-5">UX & Design</Link>
+            <Link class="lg:mx-7 my-3">Marketing</Link>
+            <Link class="lg:mx-7 my-3">Product Management</Link>
+            <Link class="lg:mx-7 my-3">Engineering</Link>
+            <Link class="lg:mx-7 my-3">Consultants</Link>
+            <Link class="lg:mx-7 my-3">Agile Coaches</Link>
+            <Link class="lg:mx-7 my-3">Sales</Link>
+          </div>
+          <div class="lg:flex lg:justify-between lg:my-28 my-14 mx-5">
+            <div class="lg:w-1/2 lg:ml-24 ml-10 mr-8 flex-col align-middle justify-center h-full">
+              <p class="lg:flex lg:justify-start flex justify-center lg:my-5 text-center my-8">
+                <PiCheckBold class="lg:visible invisible mr-2 mt-1" />
+                Built low-fi wireframes
+              </p>
+              <p class="lg:flex lg:justify-start flex justify-center my-5 text-center my-8">
+                <PiCheckBold class="lg:visible invisible mr-2 mt-1" />
+                Involve stakeholders in the design process
+              </p>
+              <p class="lg:flex lg:justify-start flex justify-center my-5 text-center my-8">
+                <PiCheckBold class="lg:visible invisible mr-2 mt-1" />
+                Run engaging design workshops
+              </p>
+              <span class="lg:flex lg:justify-start flex justify-center items-center mt-5">
+                <span>
+                  <Link class="text-blue-400 underline">Learn More</Link>
+                </span>
+                <span>
+                  <FaArrowRightLong class="mt-1 ml-1" />
+                </span>
+              </span>
+              <p class="text-center mt-10">Integrate your favorite tools</p>
+              <div class="flex justify-center">
+                <img src={tool_img_1} class="size-7 mr-1.5 mt-5" />
+                <img src={tool_img_2} class="size-14 mt-1.5" />
+                <img src={tool_img_3} class="size-7 mr-1.5 mt-5" />
+                <img src={tool_img_4} class="size-7 ml-1.5 mt-5" />
+              </div>
+            </div>
+
+            <img
+              class="lg:w-1/2 lg:mt-0 lg:ml-14 lg:mr-14 mr-0 mt-5"
+              src={img6}
+              alt="fifth image"
+            />
           </div>
         </div>
       </div>
