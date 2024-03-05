@@ -1,11 +1,13 @@
 import React from "react";
 import img1 from "../Assets/image.png";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from "react-icons/fa6";
 const Home = () => {
   return (
     <>
-      <div>
-        <div class="bg lg:flex lg:justify-between my-16">
-          <div class="lg:w-1/2 lg:ml-24 ml-10 mr-10 flex-col align-middle justify-center h-full">
+      <div class="ml-0 mr-0">
+        <div class="bg lg:flex lg:justify-between my-14">
+          <div class="lg:w-1/2 lg:ml-24 ml-10 mr-8 flex-col align-middle justify-center h-full">
             <h1 class="lg:text-5xl lg:text-left text-3xl font-bold text-center">
               Take ideas from better to best
             </h1>
@@ -365,6 +367,52 @@ const Home = () => {
                 </defs>
               </svg>
             </div>
+          </div>
+        </div>
+
+        <div class="w-100vh lg:ml-0 lg:mr-0 lg:text-left text-center ml-3 mr-3">
+          <h2 class="text-center font-bold lg:text-5xl  lg:mt-36 lg:mb-24 text-2xl mt-24 mb-14">
+            <div>
+              <p class="text-sm text-center bg-yellow-400 w-52 rounded-2xl lg:p-[5px] p-[2px] lg:ml-[60%] ml-[30%] font-bold rotate-12 mb-12">
+                YOUR IDEA STARTS HERE
+              </p>
+            </div>
+            Collaborate Without <br /> Constraints
+          </h2>
+
+          <div class="lg:grid grid-rows-1 lg:grid-flow-col lg:gap-20 lg:ml-28 lg:mr-24 lg:mb-24 mb-10">
+            <div class="items-center">
+              <h3 class="text-lg font-semibold mb-2">Free Forever</h3>
+              <p class="text-gray-500 leading-8 tracking-wide">
+                Our free plan gives you unlimited team members, 3 boards, and
+                300+ expert-made templates. Signing up with your work email lets
+                you bring in your team faster. See our pricing plans for more
+                features.
+              </p>
+            </div>
+
+            <div class="items-center lg:mt-0 mt-10">
+              <h3 class="text-lg font-semibold mb-2">Easy Integration</h3>
+              <p class="text-gray-500 leading-8 tracking-wide">
+                Miro has 100+ powerful integrations with tools you already use
+                like G Suite, Slack, and Jira, so your workflow is seamless.
+                View the full list in our Marketplace .
+              </p>
+            </div>
+
+            <div class="items-center lg:mt-0 mt-10">
+              <h3 class="text-lg font-semibold mb-2">Security First</h3>
+              <p class="text-gray-500 leading-8 tracking-wide">
+                We treat your data like you would — with the utmost care. We
+                follow industry-leading security standards and give you tools to
+                protect intellectual property. Learn more at our Trust Center .
+              </p>
+            </div>
+          </div>
+          <div class="lg:pb-20 pb-10">
+            <Link class="bg-blue-500 p-2 flex justify-center rounded-2xl text-center items-center lg:ml-[35rem] lg:mr-[35rem] ml-20 mr-20">
+              Sign up free <FaArrowRightLong class="mt-[4px] mx-[10px]" />
+            </Link>
           </div>
         </div>
       </div>

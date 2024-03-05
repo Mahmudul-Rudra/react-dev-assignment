@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Header = () => {
   return (
     <>
-      <nav class="w-full h-20  flex justify-between sticky px-4 items-center lg:px-4">
+      <nav class=" bg-white w-full h-20  flex justify-between sticky lg:top-0 top-0 items-center lg:px-4">
         <div class="flex font-semibold items-center">
           <Link to={"/"}>
             <svg
@@ -15,7 +15,7 @@ const Header = () => {
               viewBox="0 0 91 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="cursor-pointer"
+              class="cursor-pointer lg:ml-0 ml-2"
             >
               <path
                 fill-rule="evenodd"
@@ -93,7 +93,7 @@ const Header = () => {
             Sign up free <FaArrowRightLong class="mt-[4px] mx-[10px]" />{" "}
           </button>
         </div>
-        <div class="lg:hidden">
+        <div class="lg:hidden mr-2">
           <Link class="text-4xl" to={"/"}>
             &#8801;
           </Link>
